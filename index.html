@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI UNIVERSE</title>
+<!--font awsome kit-->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- tailwind and daisyui cdn -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <h1 class="text-center text-3xl py-5">AI Universe Hub</h1>
+
+    <!-- sort button -->
+    <div class="text-center">
+      <button id="sort-by-date-button" class="text-center my-5 rounded-2xl bg-[#eb5757] px-7 py-6 text-white font-semibold text-xl">Sort by date</button>
+    </div>
+
+    <!-- dynamic items display container -->
+    <div
+      id="display-container"
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 m-12"
+    >
+  </div>
+
+  <!-- modal -->
+<!-- You can open the modal using ID.showModal() method -->
+
+<dialog id="my_modal_3" class="modal ">
+  <form method="dialog" class="w-[1240px] bg-white h-[760px]">
+    <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+   <div id="modal-container">
+
+   </div>
+  </form>
+</dialog>
+
+  <!-- see more button -->
+  <div onclick="seeMore()" class="text-center" id="see-more-button">
+    <button class="mt-12 mb-16 rounded-2xl bg-[#eb5757] text-center text-xl text-white font-semibold px-11 py-6 ">See More</button>
+
+  </div>
+    <script src="sort.js"></script>
+  </body>
+</html>
